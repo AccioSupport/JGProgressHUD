@@ -28,6 +28,7 @@ Download the source code and open the <a href="Examples">Examples</a> project to
 [![GitHub license](https://img.shields.io/github/license/JonasGessner/JGProgressHUD.svg)](https://github.com/JonasGessner/JGProgressHUD/blob/master/LICENSE.txt)
 [![CocoaPods](https://img.shields.io/cocoapods/v/JGProgressHUD.svg)](https://cocoapods.org/pods/JGProgressHUD)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Accio supported](https://img.shields.io/badge/Accio-supported-0A7CF5.svg?style=flat)](https://github.com/JamitLabs/Accio)
 
 Examples
 --------------
@@ -131,6 +132,27 @@ In your `Cartfile` add:
 ```
 github "JonasGessner/JGProgressHUD"
 ```
+
+## Accio
+
+Add the following to your `Package.swift`:
+
+```swift
+.package(url: "https://github.com/JonasGessner/JGProgressHUD.git", .upToNextMajor(from: "2.0.3")),
+```
+
+Next, add `JGProgressHUD` to your App targets dependencies like so:
+
+```swift
+.target(
+    name: "App",
+    dependencies: [
+        "JGProgressHUD",
+    ]
+),
+```
+
+Then run `accio update`.
 
 ### Manual Installation (Framework):
 
