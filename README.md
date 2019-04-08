@@ -133,7 +133,7 @@ In your `Cartfile` add:
 github "JonasGessner/JGProgressHUD"
 ```
 
-## Accio
+### Accio
 
 Add the following to your `Package.swift`:
 
